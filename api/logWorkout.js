@@ -20,6 +20,10 @@ export default async function handler(req, res) {
     if (!notionToken || !DB_LOG) {
       return res.status(500).json({ success: false, message: 'Server misconfig (NOTION_TOKEN/DB_LOG)' });
     }
+
+    console.log("NOTION_TOKEN:", notionToken ? "set" : "missing");
+    console.log("DB_LOG:", DB_LOG);
+    console.log("DB_SETS:", DB_SETS);
   
     // JSON 受信
     let body = {};
@@ -175,8 +179,3 @@ async function notion(path, init) {
     }
   });
 }
-
-// 🔍 デバッグログをここに追加！
-console.log("NOTION_TOKEN:", notionToken ? "set" : "missing");
-console.log("DB_LOG:", DB_LOG);
-console.log("DB_SETS:", DB_SETS);
