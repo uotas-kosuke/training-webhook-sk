@@ -1,0 +1,7 @@
+{
+    "rewrites": [
+      { "source": "/log-training", "destination": "/api/log-training" },
+      { "source": "/run/(.*)", "destination": "/api/log-training" }
+    ]
+  }
+  

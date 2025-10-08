@@ -1,0 +1,12 @@
+{
+  "name": "training-webhook",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "deploy": "vercel deploy --prod"
+  },
+  "dependencies": {
+    "@notionhq/client": "^5.1.0",
+    "zod": "^4.1.9"
+  }
+}

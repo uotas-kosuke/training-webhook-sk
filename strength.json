@@ -1,0 +1,13 @@
+{
+    "type": "strength",
+    "session": {
+      "date": "2025-09-19",
+      "title": "胸トレ",
+      "body_part": "胸",
+      "memo": "朝イチ"
+    },
+    "sets": [
+      { "exercise": "ベンチプレス", "weight": 80, "reps": 5, "sets": 3 }
+    ]
+  }
+  
